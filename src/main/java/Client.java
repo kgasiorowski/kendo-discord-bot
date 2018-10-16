@@ -7,7 +7,7 @@ import javax.security.auth.login.LoginException;
 
 public class Client {
 
-    private final static String TOKEN = "NTAxNjA1NzEyMDE1OTE3MDU3.DqeXWA.nyujXiLgWqlVPLeRAf0sOpUi1Uk";
+    private final static String TOKEN = Token.TOKEN;
     private final static Channel TEST_CHANNEL = null;
 
     public static void main(String[] args) throws InterruptedException, LoginException{

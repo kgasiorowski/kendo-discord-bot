@@ -1,4 +1,5 @@
 import Utils.Token;
+import eventhandlers.MemberJoinedListener;
 import eventhandlers.MessageListener;
 import eventhandlers.ReadyEventListener;
 import net.dv8tion.jda.core.JDA;
@@ -15,6 +16,7 @@ public class Client {
         JDA jda = new JDABuilder(TOKEN)
                     .addEventListener(new MessageListener())
                     .addEventListener(new ReadyEventListener())
+                    .addEventListener(new MemberJoinedListener())
                     .build();
 
         jda.awaitReady();
